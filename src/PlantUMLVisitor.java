@@ -36,6 +36,8 @@ public class PlantUMLVisitor implements IWalker {
 	private ArrayList<String> associationList;
 	private ArrayList<String> aggregationList;
 	private ArrayList<String> compositionList;
+	private ArrayList<String> containerAggregationList;
+	private ArrayList<String> containerCompositionList;
 
 	@Override
 	public void close(IAbstractModel anAbstractModel) {
@@ -47,16 +49,27 @@ public class PlantUMLVisitor implements IWalker {
 	public void close(IClass aClass) {
 		// TODO Auto-generated method stub
 		for (String a : associationList) {
-			printobj.println("\r\n" + aClass.getDisplayID() + " -- " + a);
+			printobj.println("\r\n" + aClass.getDisplayID() + " -- " + a + " :association");
 		}
 
 		for (String ag : aggregationList) {
-			printobj.println("\r\n" + aClass.getDisplayID() + " o-- " + ag);
+			printobj.println("\r\n" + aClass.getDisplayID() + " o-- " + ag + " :aggregation");
+		}
+
+		for (String ca : containerAggregationList) {
+
+			printobj.println("\r\n" + aClass.getDisplayID() + " o-- " + ca + " :containerAggregation");
 		}
 
 		for (String c : compositionList) {
-			printobj.println("\r\n" + aClass.getDisplayID() + " *-- " + c);
+			printobj.println("\r\n" + aClass.getDisplayID() + " *-- " + c + " :composition");
 		}
+
+		for (String cc : containerCompositionList) {
+
+			printobj.println("\r\n" + aClass.getDisplayID() + " *-- " + cc + " :containerComposition");
+		}
+
 	}
 
 	@Override
@@ -88,15 +101,25 @@ public class PlantUMLVisitor implements IWalker {
 		// TODO Auto-generated method stub
 
 		for (String a : associationList) {
-			printobj.println("\r\n" + anInterface.getDisplayID() + " -- " + a);
+			printobj.println("\r\n" + anInterface.getDisplayID() + " -- " + a + " :association");
 		}
 
 		for (String ag : aggregationList) {
-			printobj.println("\r\n" + anInterface.getDisplayID() + " o-- " + ag);
+			printobj.println("\r\n" + anInterface.getDisplayID() + " o-- " + ag + " :aggregation");
+		}
+
+		for (String ca : containerAggregationList) {
+
+			printobj.println("\r\n" + anInterface.getDisplayID() + " o-- " + ca + " :containerAggregation");
 		}
 
 		for (String c : compositionList) {
-			printobj.println("\r\n" + anInterface.getDisplayID() + " *-- " + c);
+			printobj.println("\r\n" + anInterface.getDisplayID() + " *-- " + c + " :composition");
+		}
+
+		for (String cc : containerCompositionList) {
+
+			printobj.println("\r\n" + anInterface.getDisplayID() + " *-- " + cc + " :containerComposition");
 		}
 	}
 
@@ -159,6 +182,8 @@ public class PlantUMLVisitor implements IWalker {
 		this.associationList = new ArrayList<>();
 		this.aggregationList = new ArrayList<>();
 		this.compositionList = new ArrayList<>();
+		this.containerAggregationList = new ArrayList<>();
+		this.containerCompositionList = new ArrayList<>();
 
 	}
 
@@ -191,6 +216,9 @@ public class PlantUMLVisitor implements IWalker {
 		this.associationList = new ArrayList<>();
 		this.aggregationList = new ArrayList<>();
 		this.compositionList = new ArrayList<>();
+		this.containerAggregationList = new ArrayList<>();
+		this.containerCompositionList = new ArrayList<>();
+
 	}
 
 	@Override
@@ -249,29 +277,75 @@ public class PlantUMLVisitor implements IWalker {
 
 	@Override
 	public void visit(IAggregation anAggregation) {
-		aggregationList.add(anAggregation.getTargetEntity().getDisplayID());
+		// aggregationList.add(anAggregation.getTargetEntity().getDisplayID());
+//		printobj.println(
+//				"\r\n" + anAggregation.getAttachedElement().getDisplayID() + " " + anAggregation.getCardinality()
+//						+ " o-- " + anAggregation.getTargetEntity().getDisplayID() + " :aggregation");
+		int cardinality = anAggregation.getCardinality();
+		String card = Integer.toString(cardinality);
+
+		if (cardinality > 1)
+			card = "many";
+
+		aggregationList.add("\"" + card + "\"" + " " + anAggregation.getTargetEntity().getDisplayID());
+
 	}
 
 	@Override
 	public void visit(IAssociation anAssociation) {
-		associationList.add(anAssociation.getTargetEntity().getDisplayID());
+		// associationList.add(anAssociation.getTargetEntity().getDisplayID());
+//		printobj.println(
+//				"\r\n" + anAssociation.getAttachedElement().getDisplayID() + " " + anAssociation.getCardinality()
+//						+ " -- " + anAssociation.getTargetEntity().getDisplayID() + " :association");
+		int cardinality = anAssociation.getCardinality();
+		String card = Integer.toString(cardinality);
+
+		if (cardinality > 1)
+			card = "many";
+
+		associationList.add("\"" + card + "\"" + " " + anAssociation.getTargetEntity().getDisplayID());
+
 	}
 
 	@Override
 	public void visit(IComposition aComposition) {
-		compositionList.add(aComposition.getTargetEntity().getDisplayID());
+
+		int cardinality = aComposition.getCardinality();
+		String card = Integer.toString(cardinality);
+
+		if (cardinality > 1)
+			card = "many";
+
+		containerCompositionList.add("\"" + card + "\"" + " " + aComposition.getTargetEntity().getDisplayID());
+
+		// compositionList.add(aComposition.getTargetEntity().getDisplayID());
 	}
 
 	@Override
 	public void visit(IContainerAggregation aContainerAggregation) {
 		// TODO Auto-generated method stub
-//		aggregationList.add(aContainerAggregation.getTargetEntity().getDisplayID());
+
+		int cardinality = aContainerAggregation.getCardinality();
+		String card = Integer.toString(cardinality);
+
+		if (cardinality > 1)
+			card = "many";
+
+		containerAggregationList.add("\"" + card + "\"" + " " + aContainerAggregation.getTargetEntity().getDisplayID());
 	}
 
 	@Override
 	public void visit(IContainerComposition aContainerComposition) {
 		// TODO Auto-generated method stub
-//		compositionList.add(aContainerComposition.getTargetEntity().getDisplayID());
+
+		int cardinality = aContainerComposition.getCardinality();
+		String card = Integer.toString(cardinality);
+
+		if (cardinality > 1)
+			card = "many";
+
+		containerCompositionList.add("\"" + card + "\"" + " " + aContainerComposition.getTargetEntity().getDisplayID());
+		// containerCompositionList.add(aContainerComposition.getTargetEntity().getDisplayID());
 	}
 
 	@Override

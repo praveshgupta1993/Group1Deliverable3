@@ -1,0 +1,2562 @@
+@startuml
+
+padl.event.AnalysisEvent -- java.lang.Object
+
+padl.event.AnalysisEvent -- java.lang.String
+
+padl.event.AnalysisEvent -- java.util.List
+
+padl.event.AnalysisEvent -- java.lang.StringBuffer
+
+padl.event.ElementEvent -- java.lang.Object
+
+padl.event.ElementEvent -- padl.kernel.IContainer
+
+padl.event.ElementEvent -- padl.kernel.IConstituentOfEntity
+
+padl.event.EntityEvent -- java.lang.Object
+
+padl.event.EntityEvent -- padl.kernel.IContainer
+
+padl.event.EntityEvent -- padl.kernel.IConstituentOfModel
+
+padl.event.EventGenerator -- java.lang.Object
+
+padl.event.EventGenerator -- java.util.ArrayList
+
+padl.event.EventGenerator -- java.util.Stack
+
+padl.event.EventGenerator -- padl.event.EventGenerator
+
+padl.event.EventGenerator -- padl.event.EventGenerator
+
+padl.event.EventGenerator -- java.util.Stack
+
+padl.event.EventGenerator -- padl.kernel.IContainer
+
+padl.event.EventGenerator -- padl.event.EventGenerator
+
+padl.event.EventGenerator -- padl.event.ElementEvent
+
+padl.event.EventGenerator -- padl.event.InvokeEvent
+
+padl.event.EventGenerator -- padl.event.EntityEvent
+
+padl.event.EventGenerator -- padl.event.EventGenerator
+
+padl.event.EventGenerator -- java.lang.String
+
+padl.event.EventGenerator -- java.lang.Object
+
+padl.event.EventGenerator -- padl.event.EventGenerator
+
+padl.event.EventGenerator -- java.lang.Class
+
+padl.event.EventGenerator -- java.lang.String
+
+padl.event.EventGenerator -- java.lang.StringBuffer
+
+padl.event.EventGenerator -- java.util.List
+
+padl.event.EventGenerator -- util.io.ProxyConsole
+
+padl.event.EventGenerator -- java.io.PrintWriter
+
+padl.event.EventGenerator -- java.lang.Object
+
+padl.event.EventGenerator -- padl.kernel.IConstituent
+
+padl.event.EventGenerator -- java.lang.Class
+
+padl.event.EventGenerator o-- java.util.Stack
+
+padl.event.EventGenerator o-- padl.kernel.IAbstractModel
+
+padl.event.EventGenerator o-- java.util.Stack
+
+padl.event.EventGenerator o-- java.util.List
+
+padl.event.IdentificationEvent -- java.lang.Object
+
+padl.event.IdentificationEvent -- padl.kernel.IAbstractLevelModel
+
+padl.event.IdentificationEvent -- java.lang.String
+
+padl.event.IdentificationEvent -- java.util.List
+
+padl.event.InvokeEvent -- java.lang.Object
+
+padl.event.InvokeEvent -- padl.kernel.IContainer
+
+padl.event.InvokeEvent -- padl.kernel.IConstituentOfOperation
+
+padl.kernel.exception.CreationException -- java.lang.Exception
+
+padl.kernel.exception.ModelDeclarationException -- java.lang.RuntimeException
+
+padl.kernel.impl.AbstractClass -- padl.kernel.impl.FirstClassEntity
+
+padl.kernel.impl.AbstractClass -- java.util.ArrayList
+
+padl.kernel.impl.AbstractClass -- padl.kernel.impl.AbstractClass
+
+padl.kernel.impl.AbstractClass -- java.lang.String
+
+padl.kernel.impl.AbstractClass -- padl.kernel.IInterfaceImplementer
+
+padl.kernel.impl.AbstractClass -- java.lang.Class
+
+padl.kernel.impl.AbstractClass -- java.lang.Throwable
+
+padl.kernel.impl.AbstractClass -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.AbstractClass -- padl.kernel.IInterfaceActor
+
+padl.kernel.impl.AbstractClass -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.AbstractClass -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.AbstractClass -- padl.kernel.impl.AbstractInterface
+
+padl.kernel.impl.AbstractClass -- java.util.List
+
+padl.kernel.impl.AbstractClass -- java.util.List
+
+padl.kernel.impl.AbstractClass -- java.util.Iterator
+
+padl.kernel.impl.AbstractClass -- padl.kernel.impl.Element
+
+padl.kernel.impl.AbstractClass -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractClass -- padl.kernel.IConstituentOfEntity
+
+padl.kernel.impl.AbstractClass -- java.lang.String
+
+padl.kernel.impl.AbstractClass -- padl.kernel.impl.FirstClassEntity
+
+padl.kernel.impl.AbstractClass -- java.util.Arrays
+
+padl.kernel.impl.AbstractClass -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.AbstractClass -- java.lang.StringBuffer
+
+padl.kernel.impl.AbstractClass o-- java.util.List
+
+padl.kernel.impl.AbstractClass o-- java.lang.String
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.Object
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents$NonConcurrentIterator
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents$GenericObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.StringBuffer
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.Class
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.String
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- org.apache.commons.lang.ArrayUtils
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Arrays
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.event.IModelListener
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.IPrivateModelObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Iterator
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.List
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.String
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.String
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- org.apache.commons.lang.ArrayUtils
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.System
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.List
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.List
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.INavigable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.IObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.IPrivateModelObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.event.InvokeEvent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.event.ElementEvent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.event.EntityEvent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.INavigable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.System
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.System
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.Object
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.HashSet
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Set
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.List
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents$GenericObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.List
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Iterator
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.event.IModelListener
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Set
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.String
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Iterator
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.reflect.Method
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- util.io.ProxyConsole
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.IllegalAccessException
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.reflect.InvocationTargetException
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.Class
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.Throwable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.String
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- util.io.ProxyConsole
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.IllegalAccessException
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.reflect.InvocationTargetException
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Set
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Iterator
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.List
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.ArrayList
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.lang.Object
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Arrays
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.NoSuchElementException
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- java.util.Iterator
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents -- padl.kernel.IContainer
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.INavigable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.impl.AbstractGenericContainerOfConstituents$GenericObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.IObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.impl.AbstractGenericContainerOfConstituents$GenericObservable
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- java.util.Set
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- java.util.Set
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractGenericContainerOfConstituents o-- java.lang.System
+
+padl.kernel.impl.AbstractInterface -- padl.kernel.impl.AbstractClass
+
+padl.kernel.impl.AbstractInterface -- java.util.ArrayList
+
+padl.kernel.impl.AbstractInterface -- java.lang.String
+
+padl.kernel.impl.AbstractInterface -- java.lang.Class
+
+padl.kernel.impl.AbstractInterface -- java.lang.Throwable
+
+padl.kernel.impl.AbstractInterface -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.AbstractInterface -- padl.kernel.IInterfaceImplementer
+
+padl.kernel.impl.AbstractInterface -- padl.kernel.impl.AbstractInterface
+
+padl.kernel.impl.AbstractInterface -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.AbstractInterface -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.AbstractInterface -- java.util.List
+
+padl.kernel.impl.AbstractInterface -- java.util.List
+
+padl.kernel.impl.AbstractInterface -- java.util.Iterator
+
+padl.kernel.impl.AbstractInterface o-- java.util.List
+
+padl.kernel.impl.AbstractInterface o-- java.lang.String
+
+padl.kernel.impl.AbstractInterface o-- java.util.List
+
+padl.kernel.impl.AbstractLevelModel -- padl.kernel.impl.AbstractModel
+
+padl.kernel.impl.AbstractModel -- java.lang.Object
+
+padl.kernel.impl.AbstractModel -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents
+
+padl.kernel.impl.AbstractModel -- padl.kernel.impl.GenericContainerOfTopLevelEntities
+
+padl.kernel.impl.AbstractModel -- java.lang.System
+
+padl.kernel.impl.AbstractModel -- padl.kernel.impl.AbstractModel
+
+padl.kernel.impl.AbstractModel -- java.lang.Class
+
+padl.kernel.impl.AbstractModel -- java.lang.String
+
+padl.kernel.impl.AbstractModel -- java.lang.StringBuffer
+
+padl.kernel.impl.AbstractModel -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituentOfModel
+
+padl.kernel.impl.AbstractModel -- padl.event.IModelListener
+
+padl.kernel.impl.AbstractModel -- java.util.List
+
+padl.kernel.impl.AbstractModel -- padl.event.IModelListener
+
+padl.kernel.impl.AbstractModel -- java.util.Iterator
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituentOfModel
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituentOfModel
+
+padl.kernel.impl.AbstractModel -- padl.kernel.impl.AbstractModel
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IAbstractModel
+
+padl.kernel.impl.AbstractModel -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.AbstractModel -- java.util.Iterator
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituent
+
+padl.kernel.impl.AbstractModel -- padl.visitor.IGenerator
+
+padl.kernel.impl.AbstractModel -- java.lang.Class
+
+padl.kernel.impl.AbstractModel -- padl.visitor.IWalker
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IFactory
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IFilter
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.AbstractModel -- padl.visitor.IWalker
+
+padl.kernel.impl.AbstractModel -- padl.visitor.IWalker
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IFactory
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IAbstractModel
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IConstituentOfModel
+
+padl.kernel.impl.AbstractModel -- util.io.ProxyConsole
+
+padl.kernel.impl.AbstractModel -- padl.path.FormatException
+
+padl.kernel.impl.AbstractModel -- padl.kernel.IContainer
+
+padl.kernel.impl.AbstractModel o-- padl.kernel.impl.GenericContainerOfTopLevelEntities
+
+padl.kernel.impl.AbstractModel o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.Aggregation -- padl.kernel.impl.Association
+
+padl.kernel.impl.Aggregation -- padl.kernel.impl.Aggregation
+
+padl.kernel.impl.Aggregation -- java.lang.String
+
+padl.kernel.impl.Association -- padl.kernel.impl.UseRelationship
+
+padl.kernel.impl.Class -- padl.kernel.impl.AbstractClass
+
+padl.kernel.impl.CodeLevelModel -- padl.kernel.impl.CodeLevelModel
+
+padl.kernel.impl.CodeLevelModel -- padl.kernel.impl.AbstractLevelModel
+
+padl.kernel.impl.CodeLevelModel -- util.lang.ConcreteReceiverGuard
+
+padl.kernel.impl.CodeLevelModel -- padl.kernel.ICodeLevelModelCreator
+
+padl.kernel.impl.Composition -- padl.kernel.impl.Aggregation
+
+padl.kernel.impl.Composition -- padl.kernel.IAssociation
+
+padl.kernel.impl.Composition -- padl.kernel.impl.Composition
+
+padl.kernel.impl.Constituent -- java.lang.Object
+
+padl.kernel.impl.Constituent -- java.lang.Class
+
+padl.kernel.impl.Constituent -- java.lang.Throwable
+
+padl.kernel.impl.Constituent -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Constituent -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.Constituent -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Constituent -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.Constituent -- java.util.Map
+
+padl.kernel.impl.Constituent -- java.lang.Class
+
+padl.kernel.impl.Constituent -- java.lang.ClassLoader
+
+padl.kernel.impl.Constituent -- padl.visitor.IVisitor
+
+padl.kernel.impl.Constituent -- java.lang.Class
+
+padl.kernel.impl.Constituent -- java.lang.reflect.Method
+
+padl.kernel.impl.Constituent -- java.lang.StringBuffer
+
+padl.kernel.impl.Constituent -- java.lang.Object
+
+padl.kernel.impl.Constituent -- java.lang.reflect.Method
+
+padl.kernel.impl.Constituent -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.Constituent -- java.lang.String
+
+padl.kernel.impl.Constituent -- java.lang.StringBuffer
+
+padl.kernel.impl.Constituent -- padl.visitor.IVisitor
+
+padl.kernel.impl.Constituent -- java.lang.Object
+
+padl.kernel.impl.Constituent -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.Constituent -- java.lang.String
+
+padl.kernel.impl.Constituent -- padl.kernel.IConstituent
+
+padl.kernel.impl.Constituent -- java.lang.Class
+
+padl.kernel.impl.Constituent -- java.lang.String
+
+padl.kernel.impl.Constituent -- padl.kernel.IConstituentExtension
+
+padl.kernel.impl.Constituent -- java.lang.System
+
+padl.kernel.impl.Constituent -- padl.kernel.IConstituentExtension
+
+padl.kernel.impl.Constituent -- java.lang.Object
+
+padl.kernel.impl.Constituent -- java.lang.StringBuffer
+
+padl.kernel.impl.Constituent -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Constituent -- padl.kernel.IConstituent
+
+padl.kernel.impl.Constituent -- java.util.Arrays
+
+padl.kernel.impl.Constituent -- java.lang.String
+
+padl.kernel.impl.Constituent -- java.lang.String
+
+padl.kernel.impl.Constituent -- java.util.Arrays
+
+padl.kernel.impl.Constituent -- org.apache.commons.lang.ArrayUtils
+
+padl.kernel.impl.Constituent -- com.ibm.toad.cfparse.utils.Access
+
+padl.kernel.impl.Constituent -- java.util.List
+
+padl.kernel.impl.Constituent -- java.util.StringTokenizer
+
+padl.kernel.impl.Constituent -- java.util.List
+
+padl.kernel.impl.Constituent -- util.io.ProxyConsole
+
+padl.kernel.impl.Constituent -- java.lang.CloneNotSupportedException
+
+padl.kernel.impl.Constituent -- java.lang.StringBuffer
+
+padl.kernel.impl.Constituent -- util.lang.Modifier
+
+padl.kernel.impl.Constituent o-- java.util.Map
+
+padl.kernel.impl.Constituent o-- java.util.List
+
+padl.kernel.impl.Constituent o-- java.lang.String
+
+padl.kernel.impl.Constituent o-- padl.kernel.impl.Constituent
+
+padl.kernel.impl.Constituent o-- java.lang.Class
+
+padl.kernel.impl.Constituent o-- padl.kernel.IConstituentExtension
+
+padl.kernel.impl.Constituent o-- java.lang.String
+
+padl.kernel.impl.Constituent o-- padl.kernel.impl.Constituent
+
+padl.kernel.impl.ConstituentsRepository -- java.lang.Object
+
+padl.kernel.impl.ConstituentsRepository -- util.io.ProxyConsole
+
+padl.kernel.impl.ConstituentsRepository -- util.repository.FileAccessException
+
+padl.kernel.impl.ConstituentsRepository -- com.ibm.toad.cfparse.ClassFile
+
+padl.kernel.impl.ConstituentsRepository -- padl.kernel.impl.ConstituentsRepository
+
+padl.kernel.impl.ConstituentsRepository -- util.repository.IFileRepository
+
+padl.kernel.impl.ConstituentsRepository -- util.io.SubtypeLoader
+
+padl.kernel.impl.ConstituentsRepository -- util.repository.IRepository
+
+padl.kernel.impl.ConstituentsRepository -- util.repository.IFileRepository
+
+padl.kernel.impl.ConstituentsRepository -- util.repository.impl.FileRepositoryFactory
+
+padl.kernel.impl.ConstituentsRepository -- padl.kernel.impl.ConstituentsRepository
+
+padl.kernel.impl.ConstituentsRepository -- util.repository.IRepository
+
+padl.kernel.impl.ConstituentsRepository -- java.lang.StringBuffer
+
+padl.kernel.impl.ConstituentsRepository -- java.lang.String
+
+padl.kernel.impl.ConstituentsRepository -- java.lang.StringBuffer
+
+padl.kernel.impl.ConstituentsRepository -- padl.kernel.impl.ConstituentsRepository
+
+padl.kernel.impl.Constructor -- padl.kernel.impl.Operation
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Association
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.ContainerAggregation
+
+padl.kernel.impl.ContainerAggregation -- java.lang.Class
+
+padl.kernel.impl.ContainerAggregation -- java.lang.String
+
+padl.kernel.impl.ContainerAggregation -- java.lang.StringBuffer
+
+padl.kernel.impl.ContainerAggregation -- java.lang.Object
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IConstituentOfEntity
+
+padl.kernel.impl.ContainerAggregation -- padl.event.IModelListener
+
+padl.kernel.impl.ContainerAggregation -- java.util.List
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IConstituent
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IConstituent
+
+padl.kernel.impl.ContainerAggregation -- java.util.Iterator
+
+padl.kernel.impl.ContainerAggregation -- java.lang.Class
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IFilter
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Field
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Method
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.ContainerAggregation
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.ContainerAggregation -- java.lang.String
+
+padl.kernel.impl.ContainerAggregation -- java.lang.StringBuffer
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IConstituentOfOperation
+
+padl.kernel.impl.ContainerAggregation -- java.lang.String
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Method
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.IConstituent
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Field
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.ContainerAggregation
+
+padl.kernel.impl.ContainerAggregation -- util.lang.Modifier
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.Parameter
+
+padl.kernel.impl.ContainerAggregation -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents
+
+padl.kernel.impl.ContainerAggregation o-- java.lang.String
+
+padl.kernel.impl.ContainerAggregation o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.ContainerAggregation o-- padl.kernel.impl.Field
+
+padl.kernel.impl.ContainerAggregation o-- padl.kernel.impl.Method
+
+padl.kernel.impl.ContainerAggregation o-- padl.kernel.impl.Field
+
+padl.kernel.impl.ContainerAggregation o-- padl.kernel.impl.Method
+
+padl.kernel.impl.ContainerAggregation o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.ContainerComposition -- padl.kernel.impl.ContainerAggregation
+
+padl.kernel.impl.ContainerComposition -- padl.kernel.IAssociation
+
+padl.kernel.impl.ContainerComposition -- padl.kernel.impl.ContainerComposition
+
+padl.kernel.impl.Creation -- padl.kernel.impl.UseRelationship
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.impl.Method
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.impl.DelegatingMethod
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.IAssociation
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.IMethod
+
+padl.kernel.impl.DelegatingMethod -- java.lang.Class
+
+padl.kernel.impl.DelegatingMethod -- com.ibm.toad.cfparse.utils.Access
+
+padl.kernel.impl.DelegatingMethod -- java.lang.Throwable
+
+padl.kernel.impl.DelegatingMethod -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.DelegatingMethod -- java.lang.Object
+
+padl.kernel.impl.DelegatingMethod -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.IConstituent
+
+padl.kernel.impl.DelegatingMethod -- java.lang.String
+
+padl.kernel.impl.DelegatingMethod -- java.lang.StringBuffer
+
+padl.kernel.impl.DelegatingMethod -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.DelegatingMethod -- java.lang.String
+
+padl.kernel.impl.DelegatingMethod o-- java.lang.String
+
+padl.kernel.impl.DelegatingMethod o-- padl.kernel.IAssociation
+
+padl.kernel.impl.Element -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.Element -- padl.kernel.impl.Element
+
+padl.kernel.impl.Element -- java.lang.Throwable
+
+padl.kernel.impl.Element -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Element -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.Element -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Element -- java.lang.Object
+
+padl.kernel.impl.Element -- java.lang.Class
+
+padl.kernel.impl.Element -- padl.kernel.IElement
+
+padl.kernel.impl.Element -- padl.kernel.IConstituent
+
+padl.kernel.impl.Element -- java.lang.String
+
+padl.kernel.impl.Element -- java.lang.String
+
+padl.kernel.impl.Element -- org.apache.commons.lang.ArrayUtils
+
+padl.kernel.impl.Element o-- java.lang.String
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Ghost
+
+padl.kernel.impl.Factory -- java.lang.Object
+
+padl.kernel.impl.Factory -- padl.kernel.IAggregation
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Aggregation
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Association
+
+padl.kernel.impl.Factory -- padl.kernel.IAssociation
+
+padl.kernel.impl.Factory -- padl.kernel.IClass
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Class
+
+padl.kernel.impl.Factory -- padl.kernel.IFactory
+
+padl.kernel.impl.Factory -- padl.visitor.IWalker
+
+padl.kernel.impl.Factory -- padl.visitor.IWalker
+
+padl.kernel.impl.Factory -- padl.kernel.ICodeLevelModel
+
+padl.kernel.impl.Factory -- padl.kernel.impl.CodeLevelModel
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Factory
+
+padl.kernel.impl.Factory -- java.lang.String
+
+padl.kernel.impl.Factory -- padl.kernel.IComposition
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Composition
+
+padl.kernel.impl.Factory -- padl.kernel.IConstructor
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Constructor
+
+padl.kernel.impl.Factory -- padl.kernel.IContainerAggregation
+
+padl.kernel.impl.Factory -- padl.kernel.impl.ContainerAggregation
+
+padl.kernel.impl.Factory -- padl.kernel.IContainerComposition
+
+padl.kernel.impl.Factory -- padl.kernel.impl.ContainerComposition
+
+padl.kernel.impl.Factory -- padl.kernel.ICreation
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Creation
+
+padl.kernel.impl.Factory -- padl.kernel.IDelegatingMethod
+
+padl.kernel.impl.Factory -- padl.kernel.impl.DelegatingMethod
+
+padl.kernel.impl.Factory -- padl.kernel.IFieldAccess
+
+padl.kernel.impl.Factory -- padl.kernel.impl.FieldAccess
+
+padl.kernel.impl.Factory -- padl.kernel.IField
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Field
+
+padl.kernel.impl.Factory -- padl.kernel.IGetter
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Getter
+
+padl.kernel.impl.Factory -- padl.kernel.IGhost
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Ghost
+
+padl.kernel.impl.Factory -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.Factory -- padl.kernel.IIdiomLevelModel
+
+padl.kernel.impl.Factory -- padl.kernel.impl.IdiomLevelModel
+
+padl.kernel.impl.Factory -- padl.kernel.IInterface
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Interface
+
+padl.kernel.impl.Factory -- padl.kernel.IMemberClass
+
+padl.kernel.impl.Factory -- padl.kernel.impl.MemberClass
+
+padl.kernel.impl.Factory -- padl.kernel.IMemberGhost
+
+padl.kernel.impl.Factory -- padl.kernel.impl.MemberGhost
+
+padl.kernel.impl.Factory -- padl.kernel.IMemberInterface
+
+padl.kernel.impl.Factory -- padl.kernel.impl.MemberInterface
+
+padl.kernel.impl.Factory -- padl.kernel.IMethodInvocation
+
+padl.kernel.impl.Factory -- padl.kernel.impl.MethodInvocation
+
+padl.kernel.impl.Factory -- padl.kernel.IMethod
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Method
+
+padl.kernel.impl.Factory -- padl.kernel.IPackageDefault
+
+padl.kernel.impl.Factory -- padl.kernel.impl.PackageDefault
+
+padl.kernel.impl.Factory -- padl.kernel.IPackageGhost
+
+padl.kernel.impl.Factory -- padl.kernel.impl.PackageGhost
+
+padl.kernel.impl.Factory -- padl.kernel.IPackage
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Package
+
+padl.kernel.impl.Factory -- padl.kernel.IParameter
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Parameter
+
+padl.kernel.impl.Factory -- padl.kernel.IPrimitiveEntity
+
+padl.kernel.impl.Factory -- padl.kernel.impl.PrimitiveEntity
+
+padl.kernel.impl.Factory -- padl.kernel.ISetter
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Setter
+
+padl.kernel.impl.Factory -- padl.kernel.IUseRelationship
+
+padl.kernel.impl.Factory -- padl.kernel.impl.UseRelationship
+
+padl.kernel.impl.Factory -- padl.visitor.IWalker
+
+padl.kernel.impl.Factory -- padl.kernel.IFactory
+
+padl.kernel.impl.Factory -- padl.kernel.impl.Factory
+
+padl.kernel.impl.Factory o-- java.util.Map
+
+padl.kernel.impl.Field -- padl.kernel.impl.Field
+
+padl.kernel.impl.Field -- padl.kernel.impl.Element
+
+padl.kernel.impl.Field -- java.lang.String
+
+padl.kernel.impl.Field -- java.lang.Class
+
+padl.kernel.impl.Field -- java.lang.Throwable
+
+padl.kernel.impl.Field -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Field -- java.lang.Integer
+
+padl.kernel.impl.Field -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.Field -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Field -- java.lang.StringBuffer
+
+padl.kernel.impl.Field -- java.lang.StringBuffer
+
+padl.kernel.impl.Field o-- java.lang.String
+
+padl.kernel.impl.FieldAccess -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.FieldAccess -- padl.kernel.impl.FieldAccess
+
+padl.kernel.impl.FieldAccess -- padl.kernel.IFieldAccess
+
+padl.kernel.impl.FieldAccess -- padl.kernel.IField
+
+padl.kernel.impl.FieldAccess -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.FieldAccess -- java.lang.String
+
+padl.kernel.impl.FieldAccess -- padl.kernel.IConstituent
+
+padl.kernel.impl.FieldAccess -- java.lang.StringBuffer
+
+padl.kernel.impl.FieldAccess o-- padl.kernel.IField
+
+padl.kernel.impl.FieldAccess o-- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents
+
+padl.kernel.impl.FirstClassEntity -- java.util.ArrayList
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.impl.FirstClassEntity
+
+padl.kernel.impl.FirstClassEntity -- java.util.Iterator
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.IConstituent
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.IRelationship
+
+padl.kernel.impl.FirstClassEntity -- java.lang.Class
+
+padl.kernel.impl.FirstClassEntity -- java.lang.String
+
+padl.kernel.impl.FirstClassEntity -- java.lang.StringBuffer
+
+padl.kernel.impl.FirstClassEntity -- java.lang.Object
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.IConstituent
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.IConstituentOfEntity
+
+padl.kernel.impl.FirstClassEntity -- java.util.List
+
+padl.kernel.impl.FirstClassEntity -- java.lang.Throwable
+
+padl.kernel.impl.FirstClassEntity -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.FirstClassEntity -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.FirstClassEntity -- java.util.List
+
+padl.kernel.impl.FirstClassEntity -- java.lang.Class
+
+padl.kernel.impl.FirstClassEntity -- java.lang.Throwable
+
+padl.kernel.impl.FirstClassEntity -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.FirstClassEntity -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.FirstClassEntity -- padl.event.IModelListener
+
+padl.kernel.impl.FirstClassEntity -- java.util.List
+
+padl.kernel.impl.FirstClassEntity -- java.lang.Class
+
+padl.kernel.impl.FirstClassEntity -- padl.kernel.IFilter
+
+padl.kernel.impl.FirstClassEntity -- java.util.Arrays
+
+padl.kernel.impl.FirstClassEntity -- java.util.Iterator
+
+padl.kernel.impl.FirstClassEntity o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.FirstClassEntity o-- java.lang.String
+
+padl.kernel.impl.FirstClassEntity o-- java.util.List
+
+padl.kernel.impl.FirstClassEntity o-- java.lang.String
+
+padl.kernel.impl.FirstClassEntity o-- java.util.List
+
+padl.kernel.impl.Generalisation -- padl.kernel.impl.Relationship
+
+padl.kernel.impl.Generalisation -- padl.kernel.impl.Generalisation
+
+padl.kernel.impl.GenericContainerOfInsertionOrderedConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- java.util.Iterator
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents$NaturalOrderComparator
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- java.util.Arrays
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- java.lang.Object
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- padl.util.CharArrayComparator
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- padl.kernel.IConstituent
+
+padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents$NaturalOrderComparator
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.lang.Object
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.impl.GenericContainerOfTopLevelEntities$ModelListener
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.TreeMap
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.Map
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.IConstituentOfModel
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.Map
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.io.PrintWriter
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.impl.GenericContainerOfTopLevelEntities
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.Iterator
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.lang.Class
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- util.io.ProxyConsole
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.impl.GenericContainerOfTopLevelEntities
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.lang.Throwable
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.lang.Object
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.IPackage
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.impl.GenericContainerOfTopLevelEntities
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.Iterator
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.ArrayList
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.Collections
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.List
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.event.IModelListener
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.lang.Class
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- java.util.Collection
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.util.adapter.ModelListenerAdapter
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities -- padl.kernel.impl.GenericContainerOfTopLevelEntities
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities o-- java.util.Map
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities o-- java.lang.String
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities o-- java.util.Map
+
+padl.kernel.impl.GenericContainerOfTopLevelEntities o-- padl.kernel.IAbstractModel
+
+padl.kernel.impl.Getter -- padl.kernel.impl.Method
+
+padl.kernel.impl.Getter -- padl.kernel.IMethod
+
+padl.kernel.impl.Getter -- padl.kernel.impl.Getter
+
+padl.kernel.impl.Getter -- java.util.Iterator
+
+padl.kernel.impl.Ghost -- padl.kernel.impl.AbstractInterface
+
+padl.kernel.impl.Ghost -- java.lang.StringBuffer
+
+padl.kernel.impl.Ghost -- java.lang.String
+
+padl.kernel.impl.Ghost -- padl.kernel.impl.Ghost
+
+padl.kernel.impl.IdiomLevelModel -- padl.kernel.impl.IdiomLevelModel
+
+padl.kernel.impl.IdiomLevelModel -- padl.kernel.impl.AbstractLevelModel
+
+padl.kernel.impl.Implementation -- padl.kernel.impl.Relationship
+
+padl.kernel.impl.Implementation -- padl.kernel.impl.Implementation
+
+padl.kernel.impl.Interface -- padl.kernel.impl.AbstractInterface
+
+padl.kernel.impl.Interface -- java.util.ArrayList
+
+padl.kernel.impl.Interface -- padl.kernel.IElement
+
+padl.kernel.impl.Interface -- padl.kernel.impl.Interface
+
+padl.kernel.impl.Interface -- padl.kernel.IInterfaceActor
+
+padl.kernel.impl.Interface -- padl.kernel.impl.Interface
+
+padl.kernel.impl.Interface -- padl.kernel.IClass
+
+padl.kernel.impl.Interface -- padl.kernel.IConstituent
+
+padl.kernel.impl.Interface -- java.util.List
+
+padl.kernel.impl.Interface -- java.util.Iterator
+
+padl.kernel.impl.Interface -- java.lang.StringBuffer
+
+padl.kernel.impl.Interface -- java.lang.String
+
+padl.kernel.impl.Interface -- util.lang.Modifier
+
+padl.kernel.impl.Interface -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.Interface o-- java.util.List
+
+padl.kernel.impl.MemberClass -- padl.kernel.impl.Class
+
+padl.kernel.impl.MemberClass -- padl.kernel.impl.MemberClass
+
+padl.kernel.impl.MemberClass -- java.lang.Throwable
+
+padl.kernel.impl.MemberClass -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.MemberClass -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.MemberClass -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.MemberClass -- java.lang.Object
+
+padl.kernel.impl.MemberClass -- java.lang.Class
+
+padl.kernel.impl.MemberClass -- padl.kernel.IElement
+
+padl.kernel.impl.MemberClass o-- java.lang.String
+
+padl.kernel.impl.MemberGhost -- padl.kernel.impl.Ghost
+
+padl.kernel.impl.MemberGhost -- padl.kernel.impl.MemberGhost
+
+padl.kernel.impl.MemberGhost -- java.lang.Throwable
+
+padl.kernel.impl.MemberGhost -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.MemberGhost -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.MemberGhost -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.MemberGhost -- java.lang.Object
+
+padl.kernel.impl.MemberGhost -- java.lang.Class
+
+padl.kernel.impl.MemberGhost -- padl.kernel.IElement
+
+padl.kernel.impl.MemberGhost -- java.lang.StringBuffer
+
+padl.kernel.impl.MemberGhost -- java.lang.String
+
+padl.kernel.impl.MemberGhost o-- java.lang.String
+
+padl.kernel.impl.MemberInterface -- padl.kernel.impl.Interface
+
+padl.kernel.impl.MemberInterface -- padl.kernel.impl.MemberInterface
+
+padl.kernel.impl.MemberInterface -- java.lang.Throwable
+
+padl.kernel.impl.MemberInterface -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.MemberInterface -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.MemberInterface -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.MemberInterface -- java.lang.Object
+
+padl.kernel.impl.MemberInterface -- java.lang.Class
+
+padl.kernel.impl.MemberInterface -- padl.kernel.IElement
+
+padl.kernel.impl.MemberInterface o-- java.lang.String
+
+padl.kernel.impl.Method -- java.lang.String
+
+padl.kernel.impl.Method -- padl.kernel.impl.Constructor
+
+padl.kernel.impl.Method -- padl.kernel.impl.Method
+
+padl.kernel.impl.Method -- java.lang.String
+
+padl.kernel.impl.Method -- padl.kernel.IMethod
+
+padl.kernel.impl.Method -- padl.kernel.IElement
+
+padl.kernel.impl.Method -- java.lang.StringBuffer
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.impl.MethodInvocation
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.impl.MethodInvocation$NonConcurrentIterator
+
+padl.kernel.impl.MethodInvocation -- java.lang.System
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.IOperation
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.IField
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.IMethodInvocation
+
+padl.kernel.impl.MethodInvocation -- java.util.Iterator
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.IField
+
+padl.kernel.impl.MethodInvocation -- java.lang.String
+
+padl.kernel.impl.MethodInvocation -- java.lang.StringBuffer
+
+padl.kernel.impl.MethodInvocation -- java.lang.String
+
+padl.kernel.impl.MethodInvocation -- java.lang.Object
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.impl.MethodInvocation
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.impl.MethodInvocation
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.impl.MethodInvocation
+
+padl.kernel.impl.MethodInvocation -- padl.kernel.IConstituent
+
+padl.kernel.impl.MethodInvocation -- java.util.List
+
+padl.kernel.impl.MethodInvocation -- util.lang.Modifier
+
+padl.kernel.impl.MethodInvocation o-- padl.kernel.IField
+
+padl.kernel.impl.MethodInvocation o-- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.MethodInvocation o-- padl.kernel.IOperation
+
+padl.kernel.impl.Operation -- padl.kernel.impl.Element
+
+padl.kernel.impl.Operation -- padl.kernel.impl.GenericContainerOfInsertionOrderedConstituents
+
+padl.kernel.impl.Operation -- padl.kernel.impl.Operation
+
+padl.kernel.impl.Operation -- padl.kernel.IMethod
+
+padl.kernel.impl.Operation -- java.util.Iterator
+
+padl.kernel.impl.Operation -- padl.kernel.IConstituent
+
+padl.kernel.impl.Operation -- padl.kernel.IConstituentOfOperation
+
+padl.kernel.impl.Operation -- java.lang.Class
+
+padl.kernel.impl.Operation -- java.lang.Throwable
+
+padl.kernel.impl.Operation -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Operation -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.Operation -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Operation -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.Operation -- padl.event.IModelListener
+
+padl.kernel.impl.Operation -- java.util.List
+
+padl.kernel.impl.Operation -- padl.kernel.IOperation
+
+padl.kernel.impl.Operation -- java.util.Arrays
+
+padl.kernel.impl.Operation -- java.lang.StringBuffer
+
+padl.kernel.impl.Operation -- java.lang.Class
+
+padl.kernel.impl.Operation -- java.lang.String
+
+padl.kernel.impl.Operation -- padl.kernel.IParameter
+
+padl.kernel.impl.Operation -- padl.kernel.IFilter
+
+padl.kernel.impl.Operation -- padl.kernel.IConstituent
+
+padl.kernel.impl.Operation -- padl.kernel.IConstituent
+
+padl.kernel.impl.Operation -- java.lang.Class
+
+padl.kernel.impl.Operation -- java.util.Iterator
+
+padl.kernel.impl.Operation -- java.lang.StringBuffer
+
+padl.kernel.impl.Operation -- padl.kernel.IMethodInvocation
+
+padl.kernel.impl.Operation -- java.lang.StringBuffer
+
+padl.kernel.impl.Operation -- java.lang.Class
+
+padl.kernel.impl.Operation -- java.lang.Throwable
+
+padl.kernel.impl.Operation -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Operation -- padl.kernel.impl.Operation
+
+padl.kernel.impl.Operation -- padl.kernel.IParameter
+
+padl.kernel.impl.Operation -- java.lang.String
+
+padl.kernel.impl.Operation -- util.lang.Modifier
+
+padl.kernel.impl.Operation -- java.lang.StringBuffer
+
+padl.kernel.impl.Operation -- java.lang.Class
+
+padl.kernel.impl.Operation -- java.util.Iterator
+
+padl.kernel.impl.Operation -- java.lang.String
+
+padl.kernel.impl.Operation -- padl.kernel.impl.Operation
+
+padl.kernel.impl.Operation -- java.lang.Class
+
+padl.kernel.impl.Operation -- java.lang.Throwable
+
+padl.kernel.impl.Operation -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Operation -- padl.kernel.IParameter
+
+padl.kernel.impl.Operation o-- java.lang.String
+
+padl.kernel.impl.Operation o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.Operation o-- java.lang.String
+
+padl.kernel.impl.Operation o-- java.lang.String
+
+padl.kernel.impl.Package -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.Package -- padl.kernel.impl.GenericContainerOfNaturallyOrderedConstituents
+
+padl.kernel.impl.Package -- padl.kernel.impl.Package
+
+padl.kernel.impl.Package -- java.util.Iterator
+
+padl.kernel.impl.Package -- padl.kernel.IConstituent
+
+padl.kernel.impl.Package -- java.lang.Class
+
+padl.kernel.impl.Package -- java.lang.String
+
+padl.kernel.impl.Package -- java.lang.StringBuffer
+
+padl.kernel.impl.Package -- java.lang.Object
+
+padl.kernel.impl.Package -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Package -- padl.kernel.IConstituent
+
+padl.kernel.impl.Package -- padl.kernel.IConstituentOfModel
+
+padl.kernel.impl.Package -- padl.event.IModelListener
+
+padl.kernel.impl.Package -- java.util.List
+
+padl.kernel.impl.Package -- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.Package -- java.lang.Class
+
+padl.kernel.impl.Package -- padl.kernel.IFilter
+
+padl.kernel.impl.Package -- padl.kernel.IPackage
+
+padl.kernel.impl.Package o-- padl.kernel.impl.AbstractGenericContainerOfConstituents
+
+padl.kernel.impl.PackageDefault -- padl.kernel.impl.Package
+
+padl.kernel.impl.PackageDefault -- padl.kernel.impl.PackageDefault
+
+padl.kernel.impl.PackageDefault -- java.lang.StringBuffer
+
+padl.kernel.impl.PackageDefault -- java.lang.String
+
+padl.kernel.impl.PackageGhost -- padl.kernel.impl.Package
+
+padl.kernel.impl.Parameter -- padl.kernel.impl.Parameter
+
+padl.kernel.impl.Parameter -- java.lang.String
+
+padl.kernel.impl.Parameter -- padl.kernel.impl.Element
+
+padl.kernel.impl.Parameter -- padl.kernel.IEntity
+
+padl.kernel.impl.Parameter -- java.lang.System
+
+padl.kernel.impl.Parameter -- java.lang.StringBuffer
+
+padl.kernel.impl.Parameter o-- padl.kernel.IEntity
+
+padl.kernel.impl.PrimitiveEntity -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.PrimitiveEntity -- padl.visitor.IVisitor
+
+padl.kernel.impl.PrimitiveEntity -- java.util.Arrays
+
+padl.kernel.impl.PrimitiveEntity -- padl.kernel.impl.PrimitiveEntity
+
+padl.kernel.impl.PrimitiveEntity -- java.util.Iterator
+
+padl.kernel.impl.PrimitiveEntity -- java.lang.StringBuffer
+
+padl.kernel.impl.PrimitiveEntity -- java.lang.String
+
+padl.kernel.impl.Relationship -- padl.kernel.impl.Element
+
+padl.kernel.impl.Relationship -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.Relationship -- padl.kernel.IConstituent
+
+padl.kernel.impl.Relationship -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.Relationship -- padl.kernel.impl.Relationship
+
+padl.kernel.impl.Relationship -- padl.kernel.IUseRelationship
+
+padl.kernel.impl.Relationship -- java.lang.Class
+
+padl.kernel.impl.Relationship -- java.lang.Throwable
+
+padl.kernel.impl.Relationship -- java.lang.NoClassDefFoundError
+
+padl.kernel.impl.Relationship -- java.lang.Integer
+
+padl.kernel.impl.Relationship -- util.multilingual.MultilingualManager
+
+padl.kernel.impl.Relationship -- padl.kernel.exception.ModelDeclarationException
+
+padl.kernel.impl.Relationship -- java.lang.String
+
+padl.kernel.impl.Relationship -- java.lang.StringBuffer
+
+padl.kernel.impl.Relationship -- java.lang.Object
+
+padl.kernel.impl.Relationship -- util.lang.Modifier
+
+padl.kernel.impl.Relationship o-- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.Relationship o-- java.lang.String
+
+padl.kernel.impl.Setter -- padl.kernel.impl.Method
+
+padl.kernel.impl.Setter -- padl.kernel.IMethod
+
+padl.kernel.impl.Setter -- padl.kernel.impl.Setter
+
+padl.kernel.impl.Setter -- java.util.Iterator
+
+padl.kernel.impl.Specialisation -- padl.kernel.impl.Relationship
+
+padl.kernel.impl.Specialisation -- padl.kernel.impl.Specialisation
+
+padl.kernel.impl.Statement -- padl.kernel.impl.Constituent
+
+padl.kernel.impl.UseRelationship -- padl.kernel.impl.Relationship
+
+padl.kernel.impl.UseRelationship -- padl.kernel.impl.UseRelationship
+
+padl.kernel.impl.UseRelationship -- java.lang.Object
+
+padl.kernel.impl.UseRelationship -- java.lang.Class
+
+padl.kernel.impl.UseRelationship -- java.lang.StringBuffer
+
+padl.kernel.impl.UseRelationship -- padl.kernel.IFirstClassEntity
+
+padl.kernel.impl.UseRelationship -- java.lang.String
+
+padl.kernel.Constants -- java.lang.String
+
+padl.kernel.IAbstractModel -- java.lang.Object
+
+padl.kernel.IAbstractModel -- java.lang.String
+
+padl.kernel.IAbstractModel -- padl.kernel.IFactory
+
+padl.kernel.IAbstractModel -- java.util.Iterator
+
+padl.kernel.IAbstractModel -- padl.kernel.IFirstClassEntity
+
+padl.kernel.IAbstractModelSerialiser -- padl.kernel.IAbstractModel
+
+padl.kernel.IAbstractModelSerialiser -- java.lang.String
+
+padl.kernel.IConstituent -- padl.kernel.IConstituent
+
+padl.kernel.IConstituent -- java.lang.String
+
+padl.kernel.IConstituent -- java.lang.String
+
+padl.kernel.IConstituent -- padl.kernel.IConstituentExtension
+
+padl.kernel.IContainer -- java.util.Iterator
+
+padl.kernel.IContainer -- padl.kernel.IConstituent
+
+padl.kernel.IContainerAggregation -- java.lang.String
+
+padl.kernel.IDelegatingMethod -- padl.kernel.IAssociation
+
+padl.kernel.IDelegatingMethod -- padl.kernel.IMethod
+
+padl.kernel.IElement -- padl.kernel.IElement
+
+padl.kernel.IFactory -- padl.kernel.IAggregation
+
+padl.kernel.IFactory -- padl.kernel.IAssociation
+
+padl.kernel.IFactory -- padl.kernel.IClass
+
+padl.kernel.IFactory -- padl.kernel.ICodeLevelModel
+
+padl.kernel.IFactory -- padl.kernel.IComposition
+
+padl.kernel.IFactory -- padl.kernel.IConstructor
+
+padl.kernel.IFactory -- padl.kernel.IContainerAggregation
+
+padl.kernel.IFactory -- padl.kernel.IContainerComposition
+
+padl.kernel.IFactory -- padl.kernel.ICreation
+
+padl.kernel.IFactory -- padl.kernel.IDelegatingMethod
+
+padl.kernel.IFactory -- padl.kernel.IFieldAccess
+
+padl.kernel.IFactory -- padl.kernel.IField
+
+padl.kernel.IFactory -- padl.kernel.IGetter
+
+padl.kernel.IFactory -- padl.kernel.IGhost
+
+padl.kernel.IFactory -- padl.kernel.IFirstClassEntity
+
+padl.kernel.IFactory -- padl.kernel.IIdiomLevelModel
+
+padl.kernel.IFactory -- padl.kernel.IInterface
+
+padl.kernel.IFactory -- padl.kernel.IMemberClass
+
+padl.kernel.IFactory -- padl.kernel.IMemberGhost
+
+padl.kernel.IFactory -- padl.kernel.IMemberInterface
+
+padl.kernel.IFactory -- padl.kernel.IMethodInvocation
+
+padl.kernel.IFactory -- padl.kernel.IMethod
+
+padl.kernel.IFactory -- padl.kernel.IPackageDefault
+
+padl.kernel.IFactory -- padl.kernel.IPackageGhost
+
+padl.kernel.IFactory -- padl.kernel.IPackage
+
+padl.kernel.IFactory -- padl.kernel.IParameter
+
+padl.kernel.IFactory -- padl.kernel.IPrimitiveEntity
+
+padl.kernel.IFactory -- padl.kernel.ISetter
+
+padl.kernel.IFactory -- padl.kernel.IUseRelationship
+
+padl.kernel.IField -- java.lang.String
+
+padl.kernel.IFieldAccess -- padl.kernel.IField
+
+padl.kernel.IFieldAccess -- padl.kernel.IFirstClassEntity
+
+padl.kernel.IFirstClassEntity -- padl.kernel.IFirstClassEntity
+
+padl.kernel.IFirstClassEntity -- java.util.Iterator
+
+padl.kernel.IFirstClassEntity -- java.lang.String
+
+padl.kernel.IInterface -- java.util.Iterator
+
+padl.kernel.IInterfaceActor -- java.util.Iterator
+
+padl.kernel.IInterfaceImplementer -- padl.kernel.IInterfaceActor
+
+padl.kernel.IInterfaceImplementer -- java.util.Iterator
+
+padl.kernel.IMethod -- java.lang.String
+
+padl.kernel.IMethodInvocation -- padl.kernel.IOperation
+
+padl.kernel.IMethodInvocation -- padl.kernel.IFirstClassEntity
+
+padl.kernel.IMethodInvocation -- padl.kernel.IField
+
+padl.kernel.IMethodInvocation -- java.util.Iterator
+
+padl.kernel.INavigable -- java.lang.String
+
+padl.kernel.IObservable -- java.util.Iterator
+
+padl.kernel.IOperation -- java.lang.String
+
+padl.kernel.IParameter -- java.lang.String
+
+padl.kernel.IParameter -- padl.kernel.IEntity
+
+padl.kernel.IRelationship -- padl.kernel.IFirstClassEntity
+
+padl.path.Finder -- java.lang.Object
+
+padl.path.Finder -- java.lang.String
+
+padl.path.Finder -- java.lang.Object
+
+padl.path.Finder -- padl.kernel.IAbstractModel
+
+padl.path.Finder -- padl.path.FormatException
+
+padl.path.Finder -- java.util.Arrays
+
+padl.path.Finder -- java.lang.String
+
+padl.path.Finder -- java.lang.StringBuffer
+
+padl.path.Finder -- padl.kernel.IConstituent
+
+padl.path.Finder -- padl.kernel.IContainer
+
+padl.path.Finder -- org.apache.commons.lang.ArrayUtils
+
+padl.path.Finder -- java.util.StringTokenizer
+
+padl.path.Finder -- java.util.StringTokenizer
+
+padl.path.Finder -- java.lang.StringBuffer
+
+padl.path.Finder -- java.lang.String
+
+padl.path.Finder -- padl.kernel.IContainer
+
+padl.path.Finder -- padl.kernel.IAbstractModel
+
+padl.path.Finder -- org.apache.commons.lang.ArrayUtils
+
+padl.path.Finder -- padl.path.FormatException
+
+padl.path.Finder -- padl.kernel.IConstituent
+
+padl.path.Finder o-- java.lang.StringBuffer
+
+padl.path.FormatException -- java.lang.Exception
+
+padl.util.adapter.ClassAdapter -- java.lang.Object
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IFactory
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IClass
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IConstituentOfEntity
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IConstituent
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IConstituentExtension
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IInterfaceActor
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IFirstClassEntity
+
+padl.util.adapter.ClassAdapter -- padl.util.adapter.ClassAdapter
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IConstituent
+
+padl.util.adapter.ClassAdapter -- java.lang.String
+
+padl.util.adapter.ClassAdapter -- java.lang.String
+
+padl.util.adapter.ClassAdapter -- java.util.Iterator
+
+padl.util.adapter.ClassAdapter -- java.lang.Class
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IFilter
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IConstituentExtension
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IInterfaceActor
+
+padl.util.adapter.ClassAdapter -- padl.kernel.IFirstClassEntity
+
+padl.util.adapter.ClassAdapter -- padl.event.IModelListener
+
+padl.util.adapter.ClassAdapter -- padl.util.adapter.ClassAdapter
+
+padl.util.adapter.ClassAdapter o-- padl.kernel.IClass
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.lang.Object
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.lang.StringBuffer
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.util.adapter.IdiomLevelModelAdapter
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.exception.ModelDeclarationException
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.IConstituentOfModel
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.lang.Class
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.lang.String
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.event.IModelListener
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.util.List
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.ICodeLevelModel
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.util.Iterator
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.lang.Class
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.IFilter
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.IConstituent
+
+padl.util.adapter.IdiomLevelModelAdapter -- java.lang.String
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.IFactory
+
+padl.util.adapter.IdiomLevelModelAdapter -- padl.kernel.IFirstClassEntity
+
+padl.util.adapter.IdiomLevelModelAdapter o-- padl.kernel.ICodeLevelModel
+
+padl.util.adapter.InterfaceAdapter -- java.lang.Object
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IFactory
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IInterface
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IConstituentOfEntity
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IConstituent
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IConstituentExtension
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IFirstClassEntity
+
+padl.util.adapter.InterfaceAdapter -- padl.util.adapter.InterfaceAdapter
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IConstituent
+
+padl.util.adapter.InterfaceAdapter -- java.lang.String
+
+padl.util.adapter.InterfaceAdapter -- java.lang.String
+
+padl.util.adapter.InterfaceAdapter -- java.util.Iterator
+
+padl.util.adapter.InterfaceAdapter -- java.lang.Class
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IFilter
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IConstituentExtension
+
+padl.util.adapter.InterfaceAdapter -- padl.kernel.IFirstClassEntity
+
+padl.util.adapter.InterfaceAdapter -- padl.event.IModelListener
+
+padl.util.adapter.InterfaceAdapter -- padl.util.adapter.InterfaceAdapter
+
+padl.util.adapter.InterfaceAdapter o-- padl.kernel.IInterface
+
+padl.util.adapter.ModelListenerAdapter -- java.lang.Object
+
+padl.util.adapter.WalkerAdapter -- java.lang.Object
+
+padl.util.adapter.WalkerAdapter -- java.lang.String
+
+padl.util.adapter.WalkerAdapter -- util.io.ProxyConsole
+
+padl.util.adapter.WalkerAdapter -- java.lang.Class
+
+padl.util.adapter.WalkerAdapter -- java.lang.String
+
+padl.util.adapter.WalkerAdapter -- java.io.PrintWriter
+
+padl.util.adapter.WalkerAdapter -- java.lang.Object
+
+padl.util.adapter.WalkerAdapter -- padl.kernel.IConstituent
+
+padl.util.CharArrayComparator -- java.lang.Object
+
+padl.util.CharArrayComparator -- padl.util.CharArrayComparator
+
+padl.util.ExternalDataProcessor -- java.lang.Object
+
+padl.util.ExternalDataProcessor -- padl.kernel.IFactory
+
+padl.util.ExternalDataProcessor -- java.lang.String
+
+padl.util.ExternalDataProcessor -- padl.kernel.IConstituentOfEntity
+
+padl.util.ExternalDataProcessor -- padl.kernel.IAbstractModel
+
+padl.util.ExternalDataProcessor -- padl.kernel.IFirstClassEntity
+
+padl.util.ExternalDataProcessor -- java.util.Iterator
+
+padl.util.ExternalDataProcessor -- padl.kernel.IAssociation
+
+padl.util.ExternalDataProcessor -- java.util.Iterator
+
+padl.util.ExternalDataProcessor -- java.util.Set
+
+padl.util.ExternalDataProcessor -- java.lang.String
+
+padl.util.ExternalDataProcessor -- java.lang.String
+
+padl.util.ExternalDataProcessor -- java.util.StringTokenizer
+
+padl.util.ExternalDataProcessor -- java.lang.Integer
+
+padl.util.ExternalDataProcessor -- java.util.Properties
+
+padl.util.ExternalDataProcessor -- java.util.Set
+
+padl.util.ExternalDataProcessor -- padl.kernel.IAbstractModel
+
+padl.util.FilteredIterator -- java.lang.Object
+
+padl.util.FilteredIterator -- java.util.Iterator
+
+padl.util.FilteredIterator -- padl.kernel.IFilter
+
+padl.util.FilteredIterator -- padl.util.FilteredIterator
+
+padl.util.FilteredIterator -- java.util.NoSuchElementException
+
+padl.util.FilteredIterator -- java.util.Iterator
+
+padl.util.FilteredIterator -- java.lang.IllegalStateException
+
+padl.util.FilteredIterator o-- java.util.Iterator
+
+padl.util.FilteredIterator o-- padl.kernel.IFilter
+
+padl.util.FilteredIterator o-- java.util.Iterator
+
+padl.util.ModelStatistics -- java.lang.Object
+
+padl.util.ModelStatistics -- padl.event.ElementEvent
+
+padl.util.ModelStatistics -- padl.kernel.IAggregation
+
+padl.util.ModelStatistics -- padl.kernel.IContainerAggregation
+
+padl.util.ModelStatistics -- padl.kernel.IConstituentOfEntity
+
+padl.util.ModelStatistics -- padl.kernel.IConstituentOfModel
+
+padl.util.ModelStatistics -- padl.event.EntityEvent
+
+padl.util.ModelStatistics -- java.io.PrintWriter
+
+padl.util.ModelStatistics -- util.io.ProxyConsole
+
+padl.util.ModelStatistics -- java.lang.String
+
+padl.util.ModelStatistics -- padl.event.IdentificationEvent
+
+padl.util.ModelStatistics -- java.lang.StringBuffer
+
+padl.util.NotFilter -- java.lang.Object
+
+padl.util.NotFilter -- padl.kernel.IFilter
+
+padl.util.NotFilter o-- padl.kernel.IFilter
+
+padl.util.Util -- java.lang.String
+
+padl.util.Util -- java.lang.Object
+
+padl.util.Util -- java.lang.String
+
+padl.util.Util -- java.lang.StringBuffer
+
+padl.util.Util -- util.io.ProxyConsole
+
+padl.util.Util -- java.io.PrintWriter
+
+padl.util.Util -- util.io.ProxyConsole
+
+padl.util.Util -- java.lang.Character
+
+padl.util.Util -- java.lang.System
+
+padl.util.Util -- java.util.Iterator
+
+padl.util.Util -- padl.kernel.IFirstClassEntity
+
+padl.util.Util -- java.lang.Object
+
+padl.util.Util -- padl.kernel.IAbstractModel
+
+padl.util.Util -- java.lang.Class
+
+padl.util.Util -- java.util.Iterator
+
+padl.util.Util -- padl.kernel.IFirstClassEntity
+
+padl.util.Util -- java.lang.Class
+
+padl.util.Util -- java.lang.Throwable
+
+padl.util.Util -- java.lang.NoClassDefFoundError
+
+padl.util.Util -- java.lang.System
+
+padl.util.Util -- org.apache.commons.lang.ArrayUtils
+
+padl.util.Util -- java.lang.Class
+
+padl.util.Util -- java.lang.StringBuffer
+
+padl.util.Util -- java.lang.StringBuffer
+
+padl.util.Util -- java.lang.String
+
+padl.util.Util -- util.io.ProxyConsole
+
+padl.util.Util -- java.io.PrintWriter
+
+padl.util.Util -- java.io.File
+
+padl.util.Util -- java.io.File
+
+padl.util.Util -- java.lang.String
+
+padl.util.Util -- util.io.ProxyConsole
+
+padl.util.Util -- java.io.PrintWriter
+
+padl.util.Util -- padl.kernel.IConstituent
+
+padl.util.Util -- padl.kernel.IContainer
+
+padl.util.Util -- padl.kernel.IElement
+
+padl.util.Util -- padl.kernel.IFirstClassEntity
+
+padl.util.Util -- java.util.List
+
+padl.util.Util -- java.util.List
+
+padl.util.Util -- padl.kernel.IFilter
+
+padl.util.Util -- java.util.List
+
+padl.util.Util -- java.util.List
+
+padl.util.Util -- java.util.ArrayList
+
+padl.util.Util -- java.lang.reflect.Method
+
+padl.util.Util -- java.lang.Class
+
+padl.util.Util -- java.lang.StringBuffer
+
+padl.util.Util -- java.util.Map
+
+padl.util.Util -- java.util.Set
+
+padl.util.Util -- java.lang.String
+
+padl.util.Util -- java.lang.Exception
+
+padl.util.Util -- java.util.Collection
+
+padl.util.Util -- java.beans.Introspector
+
+padl.util.Util -- java.beans.BeanInfo
+
+padl.util.Util -- java.beans.PropertyDescriptor
+
+padl.util.Util -- java.util.HashMap
+
+padl.util.Util -- java.lang.reflect.Method
+
+padl.util.Util -- java.lang.reflect.Modifier
+
+padl.util.Util -- java.util.Map
+
+padl.util.Util -- java.util.Set
+
+padl.util.Util -- java.util.Iterator
+
+padl.util.Util -- java.lang.Exception
+
+padl.util.Util -- java.lang.Object
+
+padl.util.Util -- java.util.Arrays
+
+padl.util.Util o-- java.lang.String
+
+padl.visitor.IGenerator -- java.lang.String
+
+padl.visitor.IVisitor -- java.lang.String
+
+padl.visitor.IWalker -- java.lang.Object
+
+padl.visitor.VisitorsRepository -- util.io.ProxyConsole
+
+padl.visitor.VisitorsRepository -- java.lang.Throwable
+
+padl.visitor.VisitorsRepository -- java.lang.NoClassDefFoundError
+
+padl.visitor.VisitorsRepository -- util.multilingual.MultilingualManager
+
+padl.visitor.VisitorsRepository -- util.io.ProxyConsole
+
+padl.visitor.VisitorsRepository -- java.security.AccessControlException
+
+padl.visitor.VisitorsRepository -- util.repository.FileAccessException
+
+padl.visitor.VisitorsRepository -- java.lang.Object
+
+padl.visitor.VisitorsRepository -- util.repository.impl.FileRepositoryFactory
+
+padl.visitor.VisitorsRepository -- util.repository.IFileRepository
+
+padl.visitor.VisitorsRepository -- util.io.SubtypeLoader
+
+padl.visitor.VisitorsRepository -- java.util.ArrayList
+
+padl.visitor.VisitorsRepository -- com.ibm.toad.cfparse.ClassFile
+
+padl.visitor.VisitorsRepository -- java.lang.Class
+
+padl.visitor.VisitorsRepository -- java.util.List
+
+padl.visitor.VisitorsRepository -- padl.visitor.IGenerator
+
+padl.visitor.VisitorsRepository -- padl.visitor.VisitorsRepository
+
+padl.visitor.VisitorsRepository -- padl.visitor.IWalker
+
+padl.visitor.VisitorsRepository -- util.repository.IRepository
+
+padl.visitor.VisitorsRepository -- java.lang.StringBuffer
+
+padl.visitor.VisitorsRepository -- java.lang.String
+
+padl.visitor.VisitorsRepository -- padl.visitor.VisitorsRepository
+
+padl.visitor.VisitorsRepository -- java.lang.StringBuffer
+
+padl.visitor.VisitorsRepository -- padl.visitor.VisitorsRepository
+
+padl.visitor.VisitorsRepository o-- java.util.List
+
+padl.visitor.repository.JavaGenerator -- java.lang.Object
+
+padl.visitor.repository.JavaGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.JavaGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.JavaGenerator -- java.lang.String
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IConstituent
+
+padl.visitor.repository.JavaGenerator -- util.lang.Modifier
+
+padl.visitor.repository.JavaGenerator -- java.lang.String
+
+padl.visitor.repository.JavaGenerator -- java.util.Iterator
+
+padl.visitor.repository.JavaGenerator -- java.lang.Object
+
+padl.visitor.repository.JavaGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IOperation
+
+padl.visitor.repository.JavaGenerator -- padl.visitor.repository.JavaGenerator
+
+padl.visitor.repository.JavaGenerator -- padl.visitor.repository.JavaGenerator
+
+padl.visitor.repository.JavaGenerator -- java.util.Iterator
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IClass
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IFirstClassEntity
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IAssociation
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IMethod
+
+padl.visitor.repository.JavaGenerator -- java.lang.String
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IDelegatingMethod
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IGhost
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IInterface
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IAssociation
+
+padl.visitor.repository.JavaGenerator -- java.lang.Class
+
+padl.visitor.repository.JavaGenerator -- java.lang.String
+
+padl.visitor.repository.JavaGenerator -- java.io.PrintWriter
+
+padl.visitor.repository.JavaGenerator -- util.io.ProxyConsole
+
+padl.visitor.repository.JavaGenerator -- java.lang.Object
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IConstituent
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IAggregation
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IComposition
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IContainerAggregation
+
+padl.visitor.repository.JavaGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.JavaGenerator -- padl.kernel.IField
+
+padl.visitor.repository.JavaGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.JavaGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.Object
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGenerator -- java.util.Stack
+
+padl.visitor.repository.MAGMaGenerator -- java.util.ArrayList
+
+padl.visitor.repository.MAGMaGenerator -- java.util.Stack
+
+padl.visitor.repository.MAGMaGenerator -- padl.visitor.repository.MAGMaGenerator
+
+padl.visitor.repository.MAGMaGenerator -- padl.visitor.repository.MAGMaGenerator
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGenerator -- java.util.Iterator
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.String
+
+padl.visitor.repository.MAGMaGenerator -- padl.kernel.IFirstClassEntity
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.String
+
+padl.visitor.repository.MAGMaGenerator -- padl.kernel.IAbstractModel
+
+padl.visitor.repository.MAGMaGenerator -- java.util.List
+
+padl.visitor.repository.MAGMaGenerator -- java.util.List
+
+padl.visitor.repository.MAGMaGenerator -- padl.visitor.repository.MAGMaGeneratorVertices
+
+padl.visitor.repository.MAGMaGenerator -- java.util.Iterator
+
+padl.visitor.repository.MAGMaGenerator -- padl.kernel.IClass
+
+padl.visitor.repository.MAGMaGenerator -- padl.kernel.IInterface
+
+padl.visitor.repository.MAGMaGenerator -- padl.visitor.repository.MAGMaGenerator
+
+padl.visitor.repository.MAGMaGenerator -- java.util.Iterator
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.Class
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.String
+
+padl.visitor.repository.MAGMaGenerator -- java.io.PrintWriter
+
+padl.visitor.repository.MAGMaGenerator -- util.io.ProxyConsole
+
+padl.visitor.repository.MAGMaGenerator -- java.lang.Object
+
+padl.visitor.repository.MAGMaGenerator -- padl.kernel.IConstituent
+
+padl.visitor.repository.MAGMaGenerator -- java.util.List
+
+padl.visitor.repository.MAGMaGenerator -- padl.kernel.IRelationship
+
+padl.visitor.repository.MAGMaGenerator -- java.util.List
+
+padl.visitor.repository.MAGMaGenerator o-- java.util.Stack
+
+padl.visitor.repository.MAGMaGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGenerator o-- padl.kernel.IAbstractModel
+
+padl.visitor.repository.MAGMaGenerator o-- java.util.List
+
+padl.visitor.repository.MAGMaGenerator o-- java.util.Stack
+
+padl.visitor.repository.MAGMaGenerator o-- java.util.List
+
+padl.visitor.repository.MAGMaGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.Object
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.Stack
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.ArrayList
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.List
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.Stack
+
+padl.visitor.repository.MAGMaGeneratorVertices -- padl.visitor.repository.MAGMaGeneratorVertices
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.List
+
+padl.visitor.repository.MAGMaGeneratorVertices -- padl.visitor.repository.MAGMaGeneratorVertices
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.Iterator
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.String
+
+padl.visitor.repository.MAGMaGeneratorVertices -- padl.kernel.IFirstClassEntity
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.List
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.String
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.Iterator
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.util.Iterator
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.Class
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.String
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.io.PrintWriter
+
+padl.visitor.repository.MAGMaGeneratorVertices -- util.io.ProxyConsole
+
+padl.visitor.repository.MAGMaGeneratorVertices -- java.lang.Object
+
+padl.visitor.repository.MAGMaGeneratorVertices -- padl.kernel.IConstituent
+
+padl.visitor.repository.MAGMaGeneratorVertices o-- java.lang.StringBuffer
+
+padl.visitor.repository.MAGMaGeneratorVertices o-- java.util.Stack
+
+padl.visitor.repository.MAGMaGeneratorVertices o-- java.util.Stack
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.util.Vector
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.util.Iterator
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.Integer
+
+padl.visitor.repository.MetricsANMVCCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.StringBuffer
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.util.Iterator
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.Class
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsANMVCCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsANMVCCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsANMVCCalculator -- padl.kernel.IConstituent
+
+padl.visitor.repository.MetricsANMVCCalculator o-- java.util.Vector
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.util.ArrayList
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.visitor.repository.MetricsComplexityCalculator$ValuesForModule
+
+padl.visitor.repository.MetricsComplexityCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.util.List
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.visitor.repository.MetricsComplexityCalculator
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.util.List
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.util.Iterator
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.kernel.IClass
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.visitor.repository.MetricsComplexityCalculator
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.kernel.IInterface
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.Double
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.visitor.repository.MetricsComplexityCalculator
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.kernel.IFirstClassEntity
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.kernel.IMethod
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.Math
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.StringBuffer
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.visitor.repository.MetricsComplexityCalculator$ValuesForModule
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.Class
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsComplexityCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsComplexityCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsComplexityCalculator -- padl.kernel.IConstituent
+
+padl.visitor.repository.MetricsComplexityCalculator o-- padl.visitor.repository.MetricsComplexityCalculator$ValuesForModule
+
+padl.visitor.repository.MetricsComplexityCalculator o-- java.util.List
+
+padl.visitor.repository.MetricsComplexityCalculator o-- java.util.List
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsIDCalculator -- java.util.Vector
+
+padl.visitor.repository.MetricsIDCalculator -- java.util.Iterator
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.Integer
+
+padl.visitor.repository.MetricsIDCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.StringBuffer
+
+padl.visitor.repository.MetricsIDCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsIDCalculator -- java.util.Iterator
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.Class
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsIDCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsIDCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsIDCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsIDCalculator -- padl.kernel.IConstituent
+
+padl.visitor.repository.MetricsIDCalculator o-- java.util.Vector
+
+padl.visitor.repository.MetricsNOCCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsNOCCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsNOCCalculator -- java.lang.StringBuffer
+
+padl.visitor.repository.MetricsNOCCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsNOCCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsNOCCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsNOCCalculator -- java.lang.Class
+
+padl.visitor.repository.MetricsNOCCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsNOCCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsNOCCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsNOCCalculator -- padl.kernel.IConstituent
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.Integer
+
+padl.visitor.repository.MetricsWMCCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.StringBuffer
+
+padl.visitor.repository.MetricsWMCCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsWMCCalculator -- java.util.Hashtable
+
+padl.visitor.repository.MetricsWMCCalculator -- util.io.ProxyConsole
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.Class
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.String
+
+padl.visitor.repository.MetricsWMCCalculator -- java.io.PrintWriter
+
+padl.visitor.repository.MetricsWMCCalculator -- java.lang.Object
+
+padl.visitor.repository.MetricsWMCCalculator -- padl.kernel.IConstituent
+
+padl.visitor.repository.MetricsWMCCalculator o-- padl.kernel.IClass
+
+padl.visitor.repository.MetricsWMCCalculator o-- java.util.Hashtable
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.Object
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.util.Stack
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.visitor.repository.TripletDomainCompleteGenerator
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.util.Stack
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.util.Iterator
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.String
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.kernel.IFirstClassEntity
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.String
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.util.Iterator
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.kernel.IAbstractModel
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.kernel.IClass
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.kernel.IInterface
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.util.Iterator
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.Class
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.String
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.io.PrintWriter
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- util.io.ProxyConsole
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.Object
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.kernel.IConstituent
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.kernel.IRelationship
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- java.lang.Object
+
+padl.visitor.repository.TripletDomainCompleteGenerator -- padl.visitor.repository.TripletDomainCompleteGenerator
+
+padl.visitor.repository.TripletDomainCompleteGenerator o-- java.util.Stack
+
+padl.visitor.repository.TripletDomainCompleteGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainCompleteGenerator o-- java.util.Stack
+
+padl.visitor.repository.TripletDomainCompleteGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.Object
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.util.Stack
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.visitor.repository.TripletDomainSimplifiedGenerator
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.util.Stack
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.util.Iterator
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.String
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.kernel.IFirstClassEntity
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.String
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.util.Iterator
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.kernel.IAbstractModel
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.kernel.IClass
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.kernel.IInterface
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.util.Iterator
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.Class
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.String
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.io.PrintWriter
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- util.io.ProxyConsole
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.Object
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.kernel.IConstituent
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.kernel.IRelationship
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- java.lang.Object
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator -- padl.visitor.repository.TripletDomainSimplifiedGenerator
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator o-- java.util.Stack
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator o-- java.lang.StringBuffer
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator o-- java.util.Stack
+
+padl.visitor.repository.TripletDomainSimplifiedGenerator o-- java.lang.StringBuffer
+@enduml

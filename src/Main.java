@@ -18,8 +18,8 @@ public class Main {
 			PlantUMLVisitor fgVisitor = new PlantUMLVisitor();
 			PlantUMLVisitor.printobj = output;
 
-			IIdiomLevelModel model = ModelGenerator.generateModelFromClassFilesDirectory(
-					"D://pravesh//Concordia//2020-Winter//SOEN-6461-SDM//project//v5.2//PADL//bin//padl//visitor//");
+			IIdiomLevelModel model = ModelGenerator
+					.generateModelFromClassFilesDirectory("C://Users//Harmanjeet Singh//git//v5.2//PADL//bin//padl//");
 			model.walk(fgVisitor);
 			System.out.println("End");
 		} catch (IOException e) {
